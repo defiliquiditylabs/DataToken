@@ -1,0 +1,409 @@
+{
+  "contractName": "INFT",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "safeMint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "tokenId",
+          "type": "bytes"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"tokenId\",\"type\":\"bytes\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"safeMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/INFT.sol\":\"INFT\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/INFT.sol\":{\"keccak256\":\"0x9213c312f0f00cac4561b22962f6c22cbf95608ad93b602b63b4c8c439c3deb6\",\"urls\":[\"bzz-raw://bab61556d5aa6ebda76fffde25f41d9a4cc6e8828f94ad2bdbfa823206e3efae\",\"dweb:/ipfs/QmRSpT7dBnUz24UJM43csetjWkjGKKZpVLtoWK3vTvYLBB\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.8.0;\n\ninterface INFT{\n    function safeMint(string calldata name, address to ) external;\n    function burn (bytes calldata tokenId) external;\n}",
+  "sourcePath": "/Users/fenzyresearch/Downloads/DataToken/contracts/interfaces/INFT.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/INFT.sol",
+    "exportedSymbols": {
+      "INFT": [
+        2180
+      ]
+    },
+    "id": 2181,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2167,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2180,
+        "linearizedBaseContracts": [
+          2180
+        ],
+        "name": "INFT",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "c6f05771",
+            "id": 2174,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "safeMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2172,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2169,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2174,
+                  "src": "62:20:12",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2168,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "62:6:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2171,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2174,
+                  "src": "84:10:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2170,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "84:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "61:35:12"
+            },
+            "returnParameters": {
+              "id": 2173,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:0:12"
+            },
+            "scope": 2180,
+            "src": "44:62:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2a07b6c7",
+            "id": 2179,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2177,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2176,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2179,
+                  "src": "126:22:12",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2175,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:5:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:24:12"
+            },
+            "returnParameters": {
+              "id": 2178,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "158:0:12"
+            },
+            "scope": 2180,
+            "src": "111:48:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2181,
+        "src": "24:137:12"
+      }
+    ],
+    "src": "0:161:12"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/interfaces/INFT.sol",
+    "exportedSymbols": {
+      "INFT": [
+        2180
+      ]
+    },
+    "id": 2181,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2167,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2180,
+        "linearizedBaseContracts": [
+          2180
+        ],
+        "name": "INFT",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "c6f05771",
+            "id": 2174,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "safeMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2172,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2169,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2174,
+                  "src": "62:20:12",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2168,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "62:6:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2171,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2174,
+                  "src": "84:10:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2170,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "84:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "61:35:12"
+            },
+            "returnParameters": {
+              "id": 2173,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:0:12"
+            },
+            "scope": 2180,
+            "src": "44:62:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2a07b6c7",
+            "id": 2179,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2177,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2176,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2179,
+                  "src": "126:22:12",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2175,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:5:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:24:12"
+            },
+            "returnParameters": {
+              "id": 2178,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "158:0:12"
+            },
+            "scope": 2180,
+            "src": "111:48:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2181,
+        "src": "24:137:12"
+      }
+    ],
+    "src": "0:161:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-05-20T12:17:05.258Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
